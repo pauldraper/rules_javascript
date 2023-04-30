@@ -7,6 +7,7 @@ untar(
     name = "files",
     src = {package_archive},
     strip_components = 1,
+    tags = ["no-remote"], # remote cache is slow for directories?
 )
 
 cjs_root(
